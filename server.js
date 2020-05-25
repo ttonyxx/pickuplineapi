@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 const express = require('express')
 const app = express()
 
@@ -10,7 +8,7 @@ const linesRouter = require('./routes/lines')
 app.use('/lines', linesRouter)
 
 app.get('/', (req, res) => {
-    res.render('index.ejs', { url: process.env.URL })
+    res.render('index.ejs', { url: 'getpickuplines.herokuapp.com' })
 }) 
 
 app.listen(3000, () => {
