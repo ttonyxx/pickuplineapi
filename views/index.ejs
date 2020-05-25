@@ -1,15 +1,19 @@
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+
         <title>Pick Up Lines API</title>
 
         <style>
             body {
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+                font-family: 'Raleway', sans-serif;
             }
 
             p {
                 font-size: 20px;
-                margin: 0;
+                margin: 3;
             }
 
             h1 {
@@ -17,7 +21,15 @@
             }
 
             .container {
-                padding: 10px;
+                padding: 10px 20px;
+            }
+            
+            footer {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                background-color: #F5F5F5;
+                width: 100vw;
             }
         </style>
     </head>
@@ -26,10 +38,16 @@
         <div class="container">
             <h1>Welcome to the Pick Up Lines API</h1>
 
-            <p>Use <a href="http://<%= url %>/lines"><%= url %>/lines</a> to get all the pick up lines in our wonderful database</p>
-            <p>Use <a href="http://<%= url %>/lines/random"><%= url %>/lines/random</a> to get a random pick up line to brighten up your day</p>
+            <p>Use <a href="http://<%= url %>/lines">https://<%= url %>/lines</a> to get all the pick up lines in our wonderful database</p>
+            <p>Use <a href="http://<%= url %>/lines/random">https://<%= url %>/lines/random</a> to get a random pick up line to brighten up your day</p>
             <br>
             <p>Have a great day!</p>
+            <footer>
+                <div class="container">
+                    <p>Have any suggestions for pick up lines? Send an owl!</p>
+                    <p>-Brought to you by the quarantine gang</p>
+                </div>
+            </footer>
         </div>
 
     </body>
