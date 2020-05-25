@@ -17,7 +17,10 @@ const linesArray = [
     "Are you religious? Because you’re the answer to all my prayers.",
     "I seem to have lost my phone number. Can I have yours?",
     "Aside from being sexy, what do you do for a living?",
-    "Hi, how was heaven when you left it?"
+    "Hi, how was heaven when you left it?",
+    "My love for you is like diarrhea, I just can't hold it in.",
+    "Baby, if you were words on a page, you'd be fine print.",
+    "Was that an earthquake, or did you just rock my world.",
 ]
 var lines = []
 for(let i=0; i<linesArray.length; i++) {
