@@ -42,6 +42,4 @@ router.get('/:id', (req, res) => {
     res.json(lines[req.params.id])
 })
 
-
-
 module.exports = router

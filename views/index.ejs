@@ -25,7 +25,7 @@
             }
             
             footer {
-                position: absolute;
+                position: fixed;
                 bottom: 0px;
                 left: 0px;
                 background-color: #F5F5F5;
@@ -61,7 +61,7 @@
                 box-shadow: 0 2px 2px rgba(0,0,0,0.3);
             }
 
-            #documentation, #usage {
+            #documentation, #usage, #donate {
                 display: none;
             }
 
@@ -106,16 +106,29 @@
                 transform: translateY(0);
                 transition: transform .25s ease-out;
             }
+
+            .header {
+                font-size: 30px;
+                text-decoration: underline;
+            }
+
+            .ymargins {
+                margin: 10px 0px;
+            }
+
+            .medium {
+                font-size: 50px;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <h1 style="margin-bottom: 0;">Welcome to the</h1>
             <h1 class="large" style="margin-top: 0;" id="showHome">Pick Up Lines API <img id="gif" src="https://media.giphy.com/media/xT1R9JrgVFXMizvGww/giphy.gif"></h1>
-            
+
             <button id="showDocs" >Documentation</button>
             <button id="showUsage">Usage</button>
-            <a href=""><button id="showGit">Github</button></a>
+            <a href="https://github.com/TtonyxX/pickuplineapi"><button id="showGit">Github</button></a>
             <button id="showDonate">Donate</button>
 
             <br><br>
@@ -123,6 +136,18 @@
             <br>
 
             <div id="home">
+
+                <p class="large">The best pick up line API out there</p>
+                <p class="medium"style="margin-top: 10px;">"This helped me pick up all the girls I met" - Unknown</p>
+                <p class="medium">"This helped me pick up all the boys I met" - Unknown</p>
+                <p class="medium">"I laughed so hard I got another ab" - Unknown</p>
+
+                <footer>
+                    <div class="container">
+                        <p>Have any suggestions for pick up lines? Send an owl <img style="width: 15px;" src="https://image.flaticon.com/icons/png/512/12/12426.png">!</p>
+                        <p>-Brought to you by the quarantine gang</p>
+                    </div>
+                </footer>
 
             </div>
 
@@ -136,52 +161,57 @@
 
             <div id="usage">
 
-                <p>Use it in an api call</p>
+                <p class="header ymargins">Use it in an api call</p>
 
                 <p>If you're using it on the client side, the javascript might look something like:</p>
 
                 <div>
                     <pre><code class="language-javascript">
-                        &lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;body {
-                            font: 100% Helvetica, sans-serif;
-                            color: #333;
-                          }
-                      
-                          .box {
-                            -webkit-border-radius: 10px;
-                            -moz-border-radius: 10px;
-                            -ms-border-radius: 10px;
-                            border-radius: 10px;
-                          }
-
                           fetch('https://<%= url %>/lines/random').then((response)=> {
                               return response.json()
                           }).then((result) => {
-                            console.log(result)
+                              console.log(result)
                           })
-                      
-                      &lt;/pre&gt;
                     </code>
                     </pre>
                 </div>
 
+                <br><br>
+
+                <p class="header ymargins">Create awesome apps</p>
+
+                <p>Whether it be a pick up helper, a random pickup line generator, or a cure to coronavirus, using this API will change the world for the better.</p>
+
+                <br><br>
+
+                <p class="header ymargins">Change the world</p>
+
+                <p>The world is at your finger tips, use this power to innovate.</p>
+
+                <br><br>
             </div>
 
-            <footer>
-                <div class="container">
-                    <p>Have any suggestions for pick up lines? Send an owl <img style="width: 15px;" src="https://image.flaticon.com/icons/png/512/12/12426.png">!</p>
-                    <p>-Brought to you by the quarantine gang</p>
-                </div>
-            </footer>
+            <div id="donate">
+                <p class="medium">Donate <a class="link" style="font-size: 50px;" href="https://www.redcross.org/donate/coronavirus-donations.html/">here</a> to keep us going</p>
+            </div>
+
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
 
-            const pages = ['#documentation', '#home', '#usage']
-            const btnNames = ['#showDocs', '#showHome', '#showUsage']
+            const pages = ['#documentation', '#home', '#usage', '#donate']
+            const btnNames = ['#showDocs', '#showHome', '#showUsage', '#showDonate']
             var active = '#home'
+
+            $('#home').children().css("display", "none")
+
+            var delay = 0
+            $('#home').children().each(function () {
+                $(this).delay(delay).fadeIn(800)
+                delay += 500
+            });
 
             for(let i=0; i<pages.length; i++) {
                 $(btnNames[i]).click(() => {
@@ -193,13 +223,6 @@
                     }
                 })
             }
-
-            fetch('http://getpickuplines.herokuapp.com/lines/random').then((response)=> {
-                console.log(response)
-                              return response.json()
-                          }).then((result) => {
-                            console.log(result)
-                          })
 
         </script>
 
