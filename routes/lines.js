@@ -27,7 +27,6 @@ for(let i=0; i<linesArray.length; i++) {
     })
 }
 
-
 // Getting all pick up lines
 router.get('/', (req, res) => {
     res.json(lines)
@@ -37,6 +36,12 @@ router.get('/', (req, res) => {
 router.get('/random', (req, res) => {
     res.json(lines[Math.floor(Math.random() * lines.length)])
 })
+
+// Getting the pick up line with id
+router.get('/:id', (req, res) => {
+    res.json(lines[req.params.id])
+})
+
 
 
 module.exports = router
