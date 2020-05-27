@@ -21,6 +21,7 @@ const linesArray = [
     "My love for you is like diarrhea, I just can't hold it in.",
     "Baby, if you were words on a page, you'd be fine print.",
     "Was that an earthquake, or did you just rock my world.",
+    "Do you want to go to In-and-Out for burgers or just in-and-out of me?"
 ]
 var lines = []
 for(let i=0; i<linesArray.length; i++) {
