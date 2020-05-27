@@ -1,8 +1,11 @@
 const express = require('express')
+var favicon = require('serve-favicon')
+var path = require('path')
 var cors = require('cors')
 const app = express()
 
 app.use(express.json())
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 app.set('view-engine', 'ejs')
 
 const linesRouter = require('./routes/lines')
