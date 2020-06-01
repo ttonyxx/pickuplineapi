@@ -21,7 +21,14 @@ const linesArray = [
     "My love for you is like diarrhea, I just can't hold it in.",
     "Baby, if you were words on a page, you'd be fine print.",
     "Was that an earthquake, or did you just rock my world.",
-    "Do you want to go to In-and-Out for burgers or just in-and-out of me?"
+    "Do you want to go to In-and-Out for burgers or just in-and-out of me?",
+    "We’re not socks, but I think we’d make a great pair.",
+    "Do you have a map? I keep getting lost in your eyes.",
+    "Do you like Star Wars? Because Yoda only one for me!",
+    "You’re so beautiful that you made me forget my pickup line",
+    "Did you invent the airplane? Because you seem Wright for me.",
+    "I’m lost. Can you give me directions to your heart?",
+    "There’s only one thing I want to change about you, and that’s your last name."
 ]
 var lines = []
 for(let i=0; i<linesArray.length; i++) {
