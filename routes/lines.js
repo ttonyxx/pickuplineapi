@@ -28,7 +28,13 @@ const linesArray = [
     "You’re so beautiful that you made me forget my pickup line",
     "Did you invent the airplane? Because you seem Wright for me.",
     "I’m lost. Can you give me directions to your heart?",
-    "There’s only one thing I want to change about you, and that’s your last name."
+    "There’s only one thing I want to change about you, and that’s your last name.",
+    "You're so sweet, you'd put Hershey's out of business!",
+    "You must be made of cheese. Because you're looking Gouda tonight!",
+    "I'm glad I remembered to bring my library card. 'Cause I am totally checking you out!",
+    "Kiss me if I'm wrong. But dinosaurs still exist, right?",
+    "You must be a high test score. Because I want to take you home and show you to my mother.",
+    "I wasn't always religious. But I am now, because you're the answer to all my prayers."
 ]
 var lines = []
 for(let i=0; i<linesArray.length; i++) {

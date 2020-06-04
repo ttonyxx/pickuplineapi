@@ -142,6 +142,7 @@
             <button id="showUsage">Usage</button>
             <a href="https://github.com/TtonyxX/pickuplineapi"><button id="showGit">Github</button></a>
             <button id="showDonate">Donate</button>
+            <button id="showRandom">Random</button>
 
             <br><br>
             <hr>
@@ -207,14 +208,24 @@
                 <p class="medium">Donate <a class="link" style="font-size: 50px;" href="https://www.redcross.org/donate/coronavirus-donations.html/">here</a> to keep us going</p>
             </div>
 
+            <div id="random">
+                <h1 style="font-weight: normal;" id="pickupline"></h1>
+            </div>
+
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
 
-            const pages = ['#documentation', '#home', '#usage', '#donate']
-            const btnNames = ['#showDocs', '#showHome', '#showUsage', '#showDonate']
+            jQuery.ajaxPrefilter(function(options) {
+                if (options.crossDomain && jQuery.support.cors) {
+                    options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+                }
+            });
+
+            const pages = ['#documentation', '#home', '#usage', '#donate', '#random']
+            const btnNames = ['#showDocs', '#showHome', '#showUsage', '#showDonate', '#showRandom']
             var active = '#home'
 
             $('#home').children().css("display", "none")
@@ -233,8 +244,21 @@
                             $(pages[i]).fadeIn(200)
                         })
                     }
+
+                    if(btnNames[i] == '#showRandom') {
+                        $("#pickupline").fadeOut();
+                        $.ajax({
+                            url: "http://getpickuplines.herokuapp.com/lines/random", 
+                            success: function(result){
+                                $("#pickupline").html(result.line)
+                                $("#pickupline").fadeIn();
+                            }
+                        });
+                    }
                 })
             }
+
+            
 
         </script>
 
