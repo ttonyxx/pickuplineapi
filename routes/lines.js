@@ -34,7 +34,8 @@ const linesArray = [
     "I'm glad I remembered to bring my library card. 'Cause I am totally checking you out!",
     "Kiss me if I'm wrong. But dinosaurs still exist, right?",
     "You must be a high test score. Because I want to take you home and show you to my mother.",
-    "I wasn't always religious. But I am now, because you're the answer to all my prayers."
+    "I wasn't always religious. But I am now, because you're the answer to all my prayers.",
+    "Mario is red, Sonic is blue, will you be my player 2.",
 ]
 var lines = []
 for(let i=0; i<linesArray.length; i++) {
