@@ -36,6 +36,12 @@ const linesArray = [
     "You must be a high test score. Because I want to take you home and show you to my mother.",
     "I wasn't always religious. But I am now, because you're the answer to all my prayers.",
     "Mario is red, Sonic is blue, will you be my player 2.",
+    "Do you know CPR? Because you are taking my breath away!",
+    "Are you an elevator? Because I’ll go up and down on you.",
+    "Are you lost ma’am? Because heaven is a long way from here.",
+    "Are you a cat because I’m feline a connection between us.",
+    "If you were a flower you’d be a damnnn-delion.",
+    "They say that kissing is a language of love, so would you mind starting a conversation with me?"
 ]
 var lines = []
 for(let i=0; i<linesArray.length; i++) {
