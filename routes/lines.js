@@ -41,7 +41,8 @@ const linesArray = [
     "Are you lost ma’am? Because heaven is a long way from here.",
     "Are you a cat because I’m feline a connection between us.",
     "If you were a flower you’d be a damnnn-delion.",
-    "They say that kissing is a language of love, so would you mind starting a conversation with me?"
+    "They say that kissing is a language of love, so would you mind starting a conversation with me?",
+    "Did your licence get suspended for driving all these guys crazy?"
 ]
 var lines = []
 for(let i=0; i<linesArray.length; i++) {
