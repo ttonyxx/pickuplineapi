@@ -42,7 +42,8 @@ const linesArray = [
     "Are you a cat because I’m feline a connection between us.",
     "If you were a flower you’d be a damnnn-delion.",
     "They say that kissing is a language of love, so would you mind starting a conversation with me?",
-    "Did your licence get suspended for driving all these guys crazy?"
+    "Did your licence get suspended for driving all these guys crazy?",
+    "I'd like to do Astronomy, but instead of looking at the heavens I'd like to look at you."
 ]
 var lines = []
 for(let i=0; i<linesArray.length; i++) {
