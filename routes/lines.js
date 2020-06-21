@@ -43,7 +43,12 @@ const linesArray = [
     "If you were a flower you’d be a damnnn-delion.",
     "They say that kissing is a language of love, so would you mind starting a conversation with me?",
     "Did your licence get suspended for driving all these guys crazy?",
-    "I'd like to do Astronomy, but instead of looking at the heavens I'd like to look at you."
+    "I'd like to do Astronomy, but instead of looking at the heavens I'd like to look at you.",
+    "Was your dad a boxer? Because damn, you’re a knockout!",
+    "Is there an airport nearby or is it my heart taking off?",
+    "Is your dad a terrorist? Cause you’re the bomb.",
+    "Are you my phone charger? Because without you, I’d die.",
+    "You must be a broom, ‘cause you just swept me off my feet."
 ]
 var lines = []
 for(let i=0; i<linesArray.length; i++) {
