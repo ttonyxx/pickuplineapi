@@ -48,7 +48,8 @@ const linesArray = [
     "Is there an airport nearby or is it my heart taking off?",
     "Is your dad a terrorist? Cause you’re the bomb.",
     "Are you my phone charger? Because without you, I’d die.",
-    "You must be a broom, ‘cause you just swept me off my feet."
+    "You must be a broom, ‘cause you just swept me off my feet.",
+    "Roses are red, I want you to remember. You are the reason, I lost no nut November."
 ]
 var lines = []
 for(let i=0; i<linesArray.length; i++) {
