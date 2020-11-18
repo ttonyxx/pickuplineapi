@@ -49,7 +49,14 @@ const linesArray = [
     "Is your dad a terrorist? Cause you’re the bomb.",
     "Are you my phone charger? Because without you, I’d die.",
     "You must be a broom, ‘cause you just swept me off my feet.",
-    "Roses are red, I want you to remember. You are the reason, I lost no nut November."
+    "Roses are red, I want you to remember. You are the reason, I lost no nut November.",
+    "You are so hot, that the temperature itself broke the ice.",
+    "Just took a DNA test. Turns out I'm 100% your type.",
+    "Not really into sunsets, but I would love to see you go down.",
+    "Call me country roads, cause I'mma take you home.",
+    "Screw the alphabet, cause U R A Q T.",
+    "If I asked you out on a date, would your answer be the same as your answer to this one?",
+    "One a scale of 1 to 10, you are an 8. And I'm in 2 you."
 ]
 var lines = []
 for(let i=0; i<linesArray.length; i++) {
